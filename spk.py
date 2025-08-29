@@ -2,7 +2,7 @@ import streamlit as st
 
 # Judul Aplikasi
 st.set_page_config(page_title="Aplikasi Multi Fitur", layout="centered")
-st.title("Aplikasi Multi Fitur dengan Streamlit")
+st.title("Aplikasi Multi Fitur")
 
 # Membuat menu navigasi
 menu = st.sidebar.radio("Pilih Fitur", ["Kalkulator", "Konversi Suhu", "Deret Fibonacci"])
@@ -11,7 +11,7 @@ menu = st.sidebar.radio("Pilih Fitur", ["Kalkulator", "Konversi Suhu", "Deret Fi
 # 1. KALKULATOR SEDERHANA
 # ==============================
 if menu == "Kalkulator":
-    st.header("📌 Kalkulator Sederhana")
+    st.header(" Kalkulator Sederhana")
     st.write("Masukkan dua angka lalu pilih operator untuk melihat hasilnya.")
 
     # Input angka
@@ -41,7 +41,7 @@ if menu == "Kalkulator":
 # 2. KONVERSI SUHU
 # ==============================
 elif menu == "Konversi Suhu":
-    st.header("🌡️ Konversi Suhu")
+    st.header("Konversi Suhu")
     st.write("Masukkan nilai suhu dalam salah satu satuan, lalu pilih konversi yang diinginkan.")
 
     # Input nilai suhu
@@ -82,7 +82,7 @@ elif menu == "Konversi Suhu":
 # 3. DERET FIBONACCI
 # ==============================
 elif menu == "Deret Fibonacci":
-    st.header("🔢 Deret Fibonacci")
+    st.header("Deret Fibonacci")
     st.write("Masukkan jumlah n untuk menampilkan deret Fibonacci.")
 
     n = st.number_input("Masukkan jumlah n", min_value=1, step=1)
