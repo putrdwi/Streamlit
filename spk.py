@@ -4,7 +4,6 @@ import streamlit as st
 st.set_page_config(page_title="Aplikasi Multi Fitur", layout="centered")
 st.title("Aplikasi Multi Fitur dengan Streamlit")
 
-
 # Membuat menu navigasi
 menu = st.sidebar.radio("Pilih Fitur", ["Kalkulator", "Konversi Suhu", "Deret Fibonacci"])
 
